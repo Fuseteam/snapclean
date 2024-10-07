@@ -1,0 +1,6 @@
+#!/usr/bin/awk -f
+BEGIN {
+	c="snap list --all"
+	while(c|getline) { if ( /disabled/ ) { cmd="sudo snap remove "$1" --revision "$3;system(cmd); } }
+	close(c);
+}
