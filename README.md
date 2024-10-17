@@ -1,4 +1,4 @@
-# Set up "Reverse Tethering" on Ubuntu
+# Clean up older revisions of snaps
 
 This is a script that uninstalled the old versions of snaps to recover space
 
