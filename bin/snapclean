@@ -1,6 +1,16 @@
 #!/usr/bin/awk -f
 BEGIN {
-	c="snap list --all"
-	while(c|getline) { if ( /disabled/ ) { cmd="sudo snap remove "$1" --revision "$3;system(cmd); } }
-	close(c);
+	system("snap list --all > /tmp/snaplist");
+	ARGC=2;
+	ARGV[1]="/tmp/snaplist"
+	system("sudo -K");
+}
+{
+	if ( /disabled/ ) {
+		system("sudo snap remove "$1" --revision "$3);
+	}
+}
+END {
+	system("rm /tmp/snaplist");
+	system("sudo -K");
 }
