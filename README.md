@@ -1,4 +1,5 @@
 ---
+layout: default
 title: Clean up older revisions of snaps
 ---
 # SnapClean
