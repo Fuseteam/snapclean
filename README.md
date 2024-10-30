@@ -1,8 +1,3 @@
----
-title: Clean up older revisions of snaps
----
-# SnapClean
-
 This is a script that uninstalled the old versions of snaps to recover space
 
 It works by filtering out snaps that are disabled and removing them by revision number
