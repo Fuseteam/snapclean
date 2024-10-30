@@ -1,4 +1,7 @@
-# Clean up older revisions of snaps
+---
+title: Clean up older revisions of snaps
+---
+# SnapClean
 
 This is a script that uninstalled the old versions of snaps to recover space
 
