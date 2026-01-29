@@ -11,6 +11,7 @@ BEGIN {
 	}
 }
 END {
+	system("sudo find /var/lib/snapd/cache/ -type f -exec rm -v {} \\;");
 	system("rm /tmp/snaplist");
 	system("sudo -K");
 }
